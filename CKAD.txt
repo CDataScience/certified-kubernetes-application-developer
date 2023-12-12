@@ -1,0 +1,23 @@
+Secrets
+
+ENV
+---------------------------------
+envFrom:
+	-secretRef:
+		name: app-config
+
+SINGLE ENV
+---------------------------------
+env:
+	- name: DB_Password
+	valueFrom:
+		secretKeyRef:
+			name: app-secret
+			key: DB_Password
+
+VOLUME
+---------------------------------
+volumes:
+- name: app-secret-volume
+  secret:
+  	secretName: app-secret
