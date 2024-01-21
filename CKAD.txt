@@ -1,5 +1,15 @@
 Secrets
 
+apiVersion: v1
+kind: Secret
+metadata:
+  name: dotfile-secret
+data:
+  .secret-file: dmFsdWUtMg0KDQo=
+
+
+
+
 ENV
 ---------------------------------
 envFrom:
