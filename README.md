@@ -1,1 +1,0 @@
-# certified-kubernetes-application-developer
